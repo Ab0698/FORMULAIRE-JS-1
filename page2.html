@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ <html lang="fr">
+ <head>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+     <meta name="viewport" content="width-device-width, initial-scale=1.0">
+     <title>gestion de from avec js</title>
+     <link rel="stylesheet" href="page2.css">
+     <link rel="stylesheet" href="awesome/css/all.min.css">
+     <script src="index.js" async></script>
+ </head>
+    
+    <body>
+        <div class="container">
+        <div class="header">
+          
+
+        </div>
+             <h1>CONNECTEZ VOUS!</h1> 
+
+         <form class="fron" id="inscription">
+             <div class="from-control">
+                <label for="">E-mail</label>
+                 <input oninput="changeEmail()" type="text" id="email" placeholder="Entrez votre E-mail"/>
+                    <p style="display: none;" id="f">VOTRE ADRESSE EMAIL ES INVALIDE</p>
+             </div>
+             <div class="from-control">
+                <label for="">Mot de passe</label>
+                 <input  oninput="changemdp()" type="password" id="mdp" placeholder="Entrez votre mot de passe">
+                 <p style="display: none;" id="passtext">Votre Mot de passe es invalide</p>
+             </div>
+             <input type="checkbox" id="box">Se souvenir de moi  <br>
+             <button type="submit"></i>se Connectez</button> 
+         </form>
+                
+             <p>Vous n'avez pas de compte? <a href="index.html">Inscrivez vous!</a></p>
+             <p>Mot de passe oublié ? <a href="">Cliquez ici!</a></p>
+           
+        
+        </div>
+
+    </body>
+ </html>

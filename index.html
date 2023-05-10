@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <html lang="fr">
+ <head>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+     <meta name="viewport" content="width-device-width, initial-scale=1.0">
+     <title>gestion de from avec js</title>
+     <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="awesome/css/all.min.css">
+     <script src="index.js" async></script>
+ </head>
+    
+    <body>
+        <div class="container">
+        <div class="header">
+             <h2>INSCRIVEZ-VOUS</h2>
+
+        </div>
+
+         <form class="fron" id="fron">
+             <div class="from-control">
+                <label for="">Nom de l'utilisateur</label>
+                 <input   oninput="changeEmail()"type="text"placeholder="Entrez votre nom" minlength="4">
+                 
+             </div>
+             <div class="from-control">
+                <label for="">Email</label>
+                 <input   oninput="changeEmail() "type="email" id="email" placeholder="eitelfranck@gmail.com" required pattern=".@gmail\.com">
+                 <p style="display: none;" id="f">VOTRE adresse email es invalide</p>
+             </div>
+             <div class="from-control">
+                <label for="">Mot de passe</label>
+                 <input  oninput="changemdp()" type="password" id="mdp" placeholder="Entrez votre mot de passe">
+                 <p style="display: none;" id="passtext">Votre Mot de passe est Invalide</p>
+             </div> <div class="from-control">
+                <label for="">Confirmez votre mot de passe</label>
+                 <input type="password" id="password2" placeholder="Confirmez votre mot de passe" required>
+             </div>
+             <input type="checkbox" id="box">J'accepte les Termes et Conditions  <br>
+             <button type="submit">S'INSCRIRE</button> 
+                     <p> Vous avez deja un compte?<a href="page2.html">Connectez vous!</a></p>
+         </form>
+           
+
+        </div>
+       
+                
+
+    </body>
+ </html>
